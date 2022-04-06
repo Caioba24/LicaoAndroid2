@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/galaxy"
+    android:orientation="vertical"
     tools:context=".Login_Layout">
 
 
@@ -18,100 +18,101 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/rocket" />
 
         <EditText
-            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/ic_borda"
             android:drawableEnd="@drawable/ic_baseline_person_24"
+            android:fontFamily="@font/spacegrotesk_regular"
             android:padding="10dp"
             android:text="User Name" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_borda"
-            android:padding="10dp"
             android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_borda"
             android:drawableEnd="@drawable/ic_baseline_lock_24"
+            android:fontFamily="@font/spacegrotesk_regular"
+            android:padding="10dp"
             android:text="Password" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/ic_borda"
             android:drawableEnd="@drawable/ic_mail"
-            android:text="E-mail"
-            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/spacegrotesk_regular"
             android:padding="10dp"
-            />
+            android:text="E-mail" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_borda"
             android:drawableEnd="@drawable/ic_phone"
-            android:text="Phone"
+            android:fontFamily="@font/spacegrotesk_regular"
             android:padding="10dp"
-            />
+            android:text="Phone" />
 
         <CheckBox
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:text="@string/allow_term_condition"
             android:layout_gravity="center"
-
-            />
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:text="@string/allow_term_condition" />
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="20dp"
             android:background="@drawable/ic_gradient"
             android:text="Sign Up"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_margin="40dp"
-            />
+            android:textColor="@color/white" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="end"
-        android:text="Don't have account?"
-        android:paddingRight="40dp"
-        android:textColor="@color/black"
-        />
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_semibold"
             android:gravity="end"
-            android:text="Sign Up"
-            android:textStyle="bold"
-            android:layout_weight="20"
+            android:paddingRight="40dp"
+            android:text="Don't have account?"
             android:textColor="@color/black"
-            />
+            android:textStyle="italic" />
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:src="@drawable/right_arrow"
-            android:layout_weight="20"
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="end"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="20"
+                android:src="@drawable/right_arrow"
+
+                />
 
 
-    </TableRow>
+        </TableRow>
 
 
     </LinearLayout>

@@ -16,103 +16,106 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/img_cadastro"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/rocket"
+            android:layout_marginTop="100dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="110dp"
-            />
+            android:src="@drawable/rocket" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="User Name"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_borda"
             android:drawableEnd="@drawable/ic_baseline_person_24"
-            android:background="@drawable/ic_borda"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
+            android:fontFamily="@font/spacegrotesk_regular"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:text="User Name"
+            android:textColor="@color/black"
+
             />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:drawableEnd="@drawable/ic_baseline_lock_24"
             android:background="@drawable/ic_borda"
+            android:drawableEnd="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:text="Password"
 
-            android:padding="10dp"
             />
-
 
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Remember Password"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            />
+            android:fontFamily="@font/quicksand_semibold"
+            android:minHeight="48dp"
+            android:text="Remember Password" />
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            >
+            android:layout_marginBottom="40dp">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:layout_weight="20"
                 android:background="@drawable/ic_gradient"
+                android:fontFamily="@font/spacegrotesk_regular"
                 android:text="Sign In"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:layout_marginRight="20dp"
-                />
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="20"
-                android:text="Forget Password?"
+                android:fontFamily="@font/quicksand_semibold"
                 android:gravity="end"
-                android:textColor="@color/black"
-                />
+                android:text="@string/forget_password"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
         </TableRow>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_semibold"
             android:gravity="end"
-            android:text="Don't have account?"
             android:paddingRight="40dp"
+            android:text="Don't have account?"
             android:textColor="@color/black"
-
-            />
+            android:textStyle="italic" />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:text="Sign Up"
-            android:textStyle="bold"
-            android:layout_weight="20"
-            android:textColor="@color/black"
-            />
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:src="@drawable/right_arrow"
-            android:layout_weight="20"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="end"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_weight="20"
+                android:src="@drawable/right_arrow" />
 
 
         </TableRow>
-
 
 
     </LinearLayout>

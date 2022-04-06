@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/galaxy"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -17,73 +17,75 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome Back"
+            android:fontFamily="@font/balooregular"
             android:gravity="center"
+            android:text="Welcome Back"
             android:textColor="@color/black"
             android:textSize="30sp"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua."
+            android:fontFamily="@font/quicksand_semibold"
             android:gravity="center"
-            android:textColor="@color/black"
-            />
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua."
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/rocket"
-            android:layout_marginTop="20dp"
-            />
+            android:layout_marginTop="35dp"
+            android:src="@drawable/rocket" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="COMPANY NAME"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
             android:gravity="center"
+            android:text="TO THE MOON"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            />
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SLOGAN HERE"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/quicksand_semibold"
             android:gravity="center"
-            android:textColor="@color/black"
-            />
+            android:text="to infinity and beyond"
+            android:textColor="@color/black" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_gradient"
-            android:text="Sign In"
+            android:fontFamily="@font/spacegrotesk_regular"
+            android:text="@string/sign_in"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="20dp"
-            />
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/ic_gradient"
-            android:text="Sign Out"
+            android:fontFamily="@font/spacegrotesk_regular"
+            android:text="@string/sign_out"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginBottom="50dp"
-            />
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign in with Social Media"
+            android:fontFamily="@font/quicksand_semibold"
             android:gravity="center"
-            android:textColor="@color/black"
-            />
+            android:text="@string/sign_in_with_social_media"
+            android:textColor="@color/black" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -110,8 +112,6 @@
                 android:src="@drawable/lnkdn"
 
                 />
-
-
         </TableRow>
     </LinearLayout>
 
