@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout_login">
+    android:orientation="vertical"
+    android:background="@drawable/galaxy"
+    tools:context=".Login_Layout">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/rocket" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_borda"
+            android:drawableEnd="@drawable/ic_baseline_person_24"
+            android:padding="10dp"
+            android:text="User Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_borda"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            android:drawableEnd="@drawable/ic_baseline_lock_24"
+            android:text="Password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_borda"
+            android:drawableEnd="@drawable/ic_mail"
+            android:text="E-mail"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_borda"
+            android:drawableEnd="@drawable/ic_phone"
+            android:text="Phone"
+            android:padding="10dp"
+            />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="@string/allow_term_condition"
+            android:layout_gravity="center"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_gradient"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_margin="40dp"
+            />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Don't have account?"
+        android:paddingRight="40dp"
+        android:textColor="@color/black"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:layout_weight="20"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow"
+            android:layout_weight="20"
+
+            />
+
+
+    </TableRow>
+
+
+    </LinearLayout>
+
+</LinearLayout>

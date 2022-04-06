@@ -10,13 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LicaoAndroid2">
         <activity
-            android:name=".LoginLayout"
-            android:exported="false" />
-        <activity
             android:name=".LayoutCadastro"
-            android:exported="false" />
-        <activity
-            android:name=".layout_login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
